@@ -1,0 +1,10 @@
+{
+  "type": "record",
+  "namespace": "AvroDemo.Models",
+  "name": "User",
+  "fields": [
+    { "name": "Name", "type": "string" },
+    { "name": "FavoriteNumber", "type": ["int", "null"] },
+    { "name": "FavoriteColor", "type": ["string", "null"] }
+  ]
+}

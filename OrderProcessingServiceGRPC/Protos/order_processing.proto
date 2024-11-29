@@ -1,0 +1,66 @@
+syntax = "proto3";
+
+option csharp_namespace = "OrderProcessingServiceGRPC";
+
+package orderprocessing;
+
+service OrderProcessing {
+  // Unary RPC
+  rpc PlaceOrder (OrderRequest) returns (OrderResponse);
+
+  // Server Streaming RPC
+  rpc TrackOrderStatus (TrackOrderRequest) returns (stream OrderStatusUpdate);
+
+  // Client Streaming RPC
+  rpc UploadBulkOrders (stream OrderRequest) returns (BulkOrderResponse);
+
+  // Bi-Directional Streaming RPC
+  rpc CustomerSupportChat (stream ChatMessage) returns (stream ChatMessage);
+
+  rpc UpdateOrderStatus (UpdateOrderStatusRequest) returns (OrderStatusUpdate);
+
+}
+
+message OrderRequest {
+  int32 order_id = 1;
+  int32 customer_id = 2;
+  repeated OrderItem items = 3;
+  string address = 4;
+}
+
+message OrderItem {
+  int32 product_id = 1;
+  int32 quantity = 2;
+}
+
+message OrderResponse {
+  bool success = 1;
+  string message = 2;
+  int32 estimated_delivery_days = 3;
+}
+
+message TrackOrderRequest {
+  int32 order_id = 1;
+}
+
+message OrderStatusUpdate {
+  int32 order_id = 1;
+  string status = 2;
+  string updated_at = 3;
+}
+
+message BulkOrderResponse {
+  int32 total_orders_processed = 1;
+  repeated OrderResponse order_responses = 2;
+}
+
+message ChatMessage {
+  int32 sender_id = 1;
+  string message = 2;
+  string sent_at = 3;
+}
+
+message UpdateOrderStatusRequest {
+  int32 order_id = 1;
+  string status = 2;
+}
