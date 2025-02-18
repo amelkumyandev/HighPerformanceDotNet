@@ -131,6 +131,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeadersExchangeProducerDemo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeadersExchangeConsumerDemo", "HeadersExchangeConsumerDemo\HeadersExchangeConsumerDemo.csproj", "{D126E352-72F5-4F61-9AE0-09000D3C99F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountdownEvenVsTaskWhenAll", "CountdownEvenVsTaskWhenAll\CountdownEvenVsTaskWhenAll.csproj", "{15F116B7-4A5B-4FAD-B6D1-9717A018A62D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -909,6 +911,18 @@ Global
 		{D126E352-72F5-4F61-9AE0-09000D3C99F1}.Release|x64.Build.0 = Release|Any CPU
 		{D126E352-72F5-4F61-9AE0-09000D3C99F1}.Release|x86.ActiveCfg = Release|Any CPU
 		{D126E352-72F5-4F61-9AE0-09000D3C99F1}.Release|x86.Build.0 = Release|Any CPU
+		{15F116B7-4A5B-4FAD-B6D1-9717A018A62D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15F116B7-4A5B-4FAD-B6D1-9717A018A62D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15F116B7-4A5B-4FAD-B6D1-9717A018A62D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{15F116B7-4A5B-4FAD-B6D1-9717A018A62D}.Debug|x64.Build.0 = Debug|Any CPU
+		{15F116B7-4A5B-4FAD-B6D1-9717A018A62D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{15F116B7-4A5B-4FAD-B6D1-9717A018A62D}.Debug|x86.Build.0 = Debug|Any CPU
+		{15F116B7-4A5B-4FAD-B6D1-9717A018A62D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15F116B7-4A5B-4FAD-B6D1-9717A018A62D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15F116B7-4A5B-4FAD-B6D1-9717A018A62D}.Release|x64.ActiveCfg = Release|Any CPU
+		{15F116B7-4A5B-4FAD-B6D1-9717A018A62D}.Release|x64.Build.0 = Release|Any CPU
+		{15F116B7-4A5B-4FAD-B6D1-9717A018A62D}.Release|x86.ActiveCfg = Release|Any CPU
+		{15F116B7-4A5B-4FAD-B6D1-9717A018A62D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
